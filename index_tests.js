@@ -14,3 +14,8 @@ it('#Should return an array of 26 elements for each player',()=>{
     expect(war.player1.hand.length).to.equal(26)
     expect(war.player2.hand.length).to.equal(26)
 })
+
+it('#Should fail',()=>{
+    let war = new Game;
+    expect(war.player1.hand.length).to.equal(52)
+})
